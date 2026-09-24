@@ -26,3 +26,6 @@ streamlit
 
 pydantic
 pydantic[email]
+
+langchain-groq
+langchain-classic
