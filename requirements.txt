@@ -31,3 +31,7 @@ langchain-groq
 langchain-classic
 
 grandalf
+langchain-community
+
+pypdf
+bs4
