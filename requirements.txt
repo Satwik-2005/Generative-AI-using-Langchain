@@ -37,3 +37,11 @@ pypdf
 bs4
 
 langchain-text-splitters
+
+chromadb
+tiktoken
+
+
+faiss-cpu
+wikipedia
+
