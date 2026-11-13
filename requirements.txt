@@ -46,3 +46,10 @@ faiss-cpu
 wikipedia
 
 youtube-transcript-api
+
+duckduckgo-search
+ddgs
+
+langchain-experimental
+
+requests
