@@ -55,3 +55,5 @@ langchain-experimental
 requests
 
 Ollama
+
+langchain-ollama

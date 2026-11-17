@@ -1,0 +1,28 @@
+FROM llama3.2:latest
+
+# PARAMETERS: Optimization for high-speed API usage
+PARAMETER temperature 0.1
+
+# Small context is enough for classification (saves RAM)
+PARAMETER num_ctx 1024
+
+# We only need a few tokens for JSON
+PARAMETER num_predict 20
+
+# Narrow the vocabulary to only essential characters
+PARAMETER top_k 10
+
+# SYSTEM: Formatting Guardrails
+SYSTEM """
+You are a sentiment analysis API. 
+You ONLY output JSON in the following schema: {"score": float, "label": "string"}.
+Labels allowed: [POSITIVE, NEGATIVE, NEUTRAL].
+Scores range from 0.0 to 1.0.
+"""
+
+# MESSAGE: Few-shot training (Solidifying the output)
+MESSAGE user "This product is okay, but the shipping was slow."
+MESSAGE assistant "{\"score\": 0.4, \"label\": \"NEUTRAL\"}"
+
+MESSAGE user "Absolutely amazing experience, highly recommend!"
+MESSAGE assistant "{\"score\": 0.95, \"label\": \"POSITIVE\"}"
