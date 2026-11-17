@@ -587,13 +587,13 @@ Through this hands-on learning journey, I am developing practical skills in:
 
 ## 👨‍💻 Author
 
-**Satwik Reddy K**
+**Satwik Reddy Kunduru**
 
 B.Tech – Computer Science and Engineering
 
 GitHub: [@Satwik-2005](https://github.com/Satwik-2005)
 
-LinkedIn: [Connect with me](https://www.linkedin.com/)
+LinkedIn: [Connect with me](https://www.linkedin.com/in/satwik-reddy-kunduru-058647321/)
 
 ---
 
